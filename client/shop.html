@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Shop | Effata Atelier
+    </title>
+
+    <link rel="stylesheet" href="./css/variable.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/components.css">
+    <link rel="stylesheet" href="./css/page.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <div class="nav-container">
+
+            <a
+                href="index.html"
+                class="brand-link"
+                aria-label="Effata Atelier home">
+
+                <img
+                    src="./assets/images/EFFATA logo White PNG.png"
+                    alt="Effata Atelier Logo"
+                    class="logo">
+
+            </a>
+
+            <button
+                type="button"
+                class="menu-toggle"
+                aria-label="Open navigation menu"
+                aria-expanded="false">
+                ☰
+            </button>
+
+            <ul class="nav-links">
+
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="shop.html">Shop</a>
+                </li>
+
+                <li>
+                    <a href="gallery.html">Gallery</a>
+                </li>
+
+                <li>
+                    <a href="our-story.html">Our Story</a>
+                </li>
+
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+
+                <li>
+                    <a href="login.html">Account</a>
+                </li>
+
+                <li>
+                    <a href="cart.html">
+                        Cart
+                        (<span class="cart-count">0</span>)
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </nav>
+
+
+    <section class="page-banner products-background">
+
+        <div class="container">
+
+            <h1>Shop</h1>
+
+            <p>
+                Explore homeware, bags, wearables
+                and canvas art from Effata Atelier.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <main class="section">
+
+        <div class="container">
+
+            <div class="shop-toolbar">
+
+                <label
+                    for="category-filter"
+                    class="visually-hidden">
+                    Filter products by category
+                </label>
+
+                <select
+                    id="category-filter"
+                    aria-label="Filter products by category">
+
+                    <option value="all">
+                        All Categories
+                    </option>
+
+                    <option value="homeware">
+                        Homeware
+                    </option>
+
+                    <option value="bags">
+                        Bags
+                    </option>
+
+                    <option value="wearables">
+                        Wearables
+                    </option>
+
+                    <option value="canvas">
+                        Canvas Art
+                    </option>
+
+                </select>
+
+
+                <label
+                    for="search-input"
+                    class="visually-hidden">
+                    Search products
+                </label>
+
+                <input
+                    type="search"
+                    id="search-input"
+                    placeholder="Search products..."
+                    aria-label="Search products">
+
+            </div>
+
+
+            <p
+                id="shop-result-message"
+                class="section-description"
+                aria-live="polite">
+            </p>
+
+
+            <div
+                id="products-container"
+                class="products-grid">
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <footer>
+
+        <div class="container">
+
+            <div class="footer-bottom">
+                © 2026 Effata Atelier.
+                All Rights Reserved.
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <script src="./js/main.js"></script>
+    <script src="./js/products.js"></script>
+
+</body>
+
+</html>

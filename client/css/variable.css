@@ -1,0 +1,65 @@
+@import url(
+    "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap"
+);
+
+:root {
+
+    /* EFFATA ATELIER COLOURS */
+
+    --gold-light: #d7a75f;
+
+    --gold-primary: #c2891b;
+
+    --dark-brown: #413724;
+
+    --cream: #faf7f2;
+
+    --cream-dark: #f1eadf;
+
+    --white: #ffffff;
+
+    --black: #222222;
+
+    --grey-light: #eeeeea;
+
+    --grey-medium: #cfc8bb;
+
+
+    /* TYPOGRAPHY */
+
+    --heading-font:
+        "Cormorant Garamond",
+        Georgia,
+        serif;
+
+    --body-font:
+        "Montserrat",
+        Arial,
+        sans-serif;
+
+
+    /* LAYOUT */
+
+    --container-width: 1200px;
+
+    --section-space: 5rem;
+
+
+    /* UI */
+
+    --radius-small: 4px;
+
+    --radius: 10px;
+
+    --shadow:
+        0 8px 24px
+        rgba(65, 55, 36, 0.10);
+
+    --shadow-hover:
+        0 12px 30px
+        rgba(65, 55, 36, 0.16);
+
+    --transition:
+        all 0.3s ease;
+
+}

@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Shopping Cart | Effata Atelier</title>
+
+    <link rel="stylesheet" href="./css/variable.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/components.css">
+    <link rel="stylesheet" href="./css/page.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <div class="nav-container">
+
+            <a
+                href="index.html"
+                class="brand-link"
+                aria-label="Effata Atelier home">
+
+                <img
+                    src="./assets/images/EFFATA logo White PNG.png"
+                    alt="Effata Atelier Logo"
+                    class="logo">
+
+            </a>
+
+            <button
+                type="button"
+                class="menu-toggle"
+                aria-label="Open navigation menu"
+                aria-expanded="false">
+                ☰
+            </button>
+
+            <ul class="nav-links">
+
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="shop.html">Shop</a></li>
+
+                <li><a href="gallery.html">Gallery</a></li>
+
+                <li><a href="our-story.html">Our Story</a></li>
+
+                <li><a href="contact.html">Contact</a></li>
+
+                <li><a href="login.html">Account</a></li>
+
+                <li>
+                    <a
+                        href="cart.html"
+                        aria-current="page">
+                        Cart
+                        (<span class="cart-count">0</span>)
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </nav>
+
+
+    <section class="page-banner cart-background">
+
+        <div class="container">
+
+            <span class="page-eyebrow">
+                Your Selection
+            </span>
+
+            <h1>
+                Shopping Cart
+            </h1>
+
+            <p>
+                Review your selected pieces,
+                colourways and quantities
+                before checkout.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <main class="cart-page">
+
+        <div class="container">
+
+
+            <div class="cart-steps">
+
+                <article class="cart-step">
+
+                    <span>01</span>
+
+                    <div>
+                        <strong>
+                            Select Your Design
+                        </strong>
+
+                        <small>
+                            Each colourway is saved separately.
+                        </small>
+                    </div>
+
+                </article>
+
+
+                <article class="cart-step">
+
+                    <span>02</span>
+
+                    <div>
+                        <strong>
+                            Review Your Order
+                        </strong>
+
+                        <small>
+                            Update quantity or remove a piece.
+                        </small>
+                    </div>
+
+                </article>
+
+
+                <article class="cart-step">
+
+                    <span>03</span>
+
+                    <div>
+                        <strong>
+                            Continue To Checkout
+                        </strong>
+
+                        <small>
+                            Delivery details follow next.
+                        </small>
+                    </div>
+
+                </article>
+
+            </div>
+
+
+            <div class="cart-layout">
+
+
+                <section class="cart-items-card">
+
+                    <div class="cart-card-header">
+
+                        <div>
+
+                            <span class="section-eyebrow">
+                                Selected Pieces
+                            </span>
+
+                            <h2>
+                                Your Cart
+                            </h2>
+
+                        </div>
+
+                        <a
+                            href="shop.html"
+                            class="cart-continue">
+                            Continue Shopping
+                        </a>
+
+                    </div>
+
+
+                    <div
+                        id="empty-cart-message"
+                        class="empty-state"
+                        hidden>
+
+                        <div class="empty-cart-badge">
+                            EA
+                        </div>
+
+                        <h2>
+                            Your Cart Is Empty
+                        </h2>
+
+                        <p>
+                            Explore the collection and
+                            select your favourite designs.
+                        </p>
+
+                        <a
+                            href="shop.html"
+                            class="btn-primary">
+                            Visit The Shop
+                        </a>
+
+                    </div>
+
+
+                    <div class="cart-table-wrapper">
+
+                        <table
+                            id="cart-table"
+                            class="cart-table">
+
+                            <thead>
+
+                                <tr>
+                                    <th>Product</th>
+                                    <th>Price</th>
+                                    <th>Qty</th>
+                                    <th>Total</th>
+                                    <th>Remove</th>
+                                </tr>
+
+                            </thead>
+
+                            <tbody id="cart-items">
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                </section>
+
+
+                <aside class="cart-summary-card">
+
+                    <span class="section-eyebrow">
+                        Summary
+                    </span>
+
+                    <h2>
+                        Order Summary
+                    </h2>
+
+
+                    <div class="summary-item">
+
+                        <span>
+                            Subtotal
+                        </span>
+
+                        <strong id="cart-subtotal">
+                            R0.00
+                        </strong>
+
+                    </div>
+
+
+                    <div class="summary-item">
+
+                        <span>
+                            Courier
+                        </span>
+
+                        <small>
+                            Calculated by location
+                        </small>
+
+                    </div>
+
+
+                    <div class="summary-item summary-total">
+
+                        <span>
+                            Product Total
+                        </span>
+
+                        <strong id="cart-total">
+                            R0.00
+                        </strong>
+
+                    </div>
+
+
+                    <button
+                        type="button"
+                        id="checkout-link"
+                        class="btn-primary cart-checkout-button">
+
+                        Proceed To Checkout
+
+                    </button>
+
+
+                    <div class="cart-delivery-note">
+
+                        <strong>
+                            Delivery
+                        </strong>
+
+                        <p>
+                            Courier costs are calculated
+                            according to delivery location
+                            during checkout.
+                        </p>
+
+                    </div>
+
+
+                    <a
+                        href="shop.html"
+                        class="btn-secondary cart-shop-link">
+
+                        Continue Shopping
+
+                    </a>
+
+                </aside>
+
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <footer>
+
+        <div class="container">
+
+            <div class="footer-bottom">
+                © 2026 Effata Atelier.
+                All Rights Reserved.
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <script src="./js/main.js"></script>
+    <script src="./js/cart.js"></script>
+
+</body>
+
+</html>

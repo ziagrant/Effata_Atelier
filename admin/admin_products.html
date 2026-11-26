@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Products | Effata Atelier Admin</title>
+
+    <link rel="stylesheet" href="../client/css/variable.css">
+    <link rel="stylesheet" href="../client/css/base.css">
+    <link rel="stylesheet" href="./css/admin.css">
+</head>
+
+<body class="admin-body">
+
+    <aside class="admin-sidebar">
+
+        <div class="admin-brand">
+            <h1>Effata Atelier</h1>
+            <p>Administration</p>
+        </div>
+
+        <nav class="admin-navigation">
+
+            <a href="admin-index.html">
+                Dashboard
+            </a>
+
+            <a href="admin_products.html" class="active">
+                Products
+            </a>
+
+            <a href="orders.html">
+                Orders
+            </a>
+
+            <a href="../client/index.html">
+                View Store
+            </a>
+
+        </nav>
+
+    </aside>
+
+    <main class="admin-main">
+
+        <header class="admin-header">
+
+            <div>
+                <p class="admin-eyebrow">Catalogue</p>
+                <h2>Products</h2>
+            </div>
+
+            <button
+                type="button"
+                id="show-product-form"
+                class="admin-button">
+                Add Product
+            </button>
+
+        </header>
+
+        <section
+            class="admin-panel product-form-panel"
+            id="product-form-panel">
+
+            <div class="panel-heading">
+
+                <div>
+                    <p class="admin-eyebrow">Product Editor</p>
+                    <h3>Add Product</h3>
+                </div>
+
+            </div>
+
+            <form
+                id="admin-product-form"
+                class="admin-form">
+
+                <div class="form-group">
+
+                    <label for="admin-product-name">
+                        Product Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="admin-product-name"
+                        name="productName"
+                        required>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="admin-category">
+                        Category
+                    </label>
+
+                    <select
+                        id="admin-category"
+                        name="category"
+                        required>
+
+                        <option value="">
+                            Select Category
+                        </option>
+
+                        <option value="homeware">
+                            Homeware
+                        </option>
+
+                        <option value="bags">
+                            Bags
+                        </option>
+
+                        <option value="wearables">
+                            Wearables
+                        </option>
+
+                        <option value="canvas-art">
+                            Canvas Art
+                        </option>
+
+                    </select>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="admin-price">
+                        Price (R)
+                    </label>
+
+                    <input
+                        type="number"
+                        id="admin-price"
+                        name="price"
+                        min="0"
+                        step="0.01"
+                        required>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="admin-stock">
+                        Stock Quantity
+                    </label>
+
+                    <input
+                        type="number"
+                        id="admin-stock"
+                        name="stock"
+                        min="0"
+                        required>
+
+                </div>
+
+                <div class="form-group full-width">
+
+                    <label for="admin-description">
+                        Description
+                    </label>
+
+                    <textarea
+                        id="admin-description"
+                        name="description"
+                        rows="5"
+                        required>
+                    </textarea>
+
+                </div>
+
+                <div class="form-group full-width">
+
+                    <label for="admin-image">
+                        Product Image Filename
+                    </label>
+
+                    <input
+                        type="text"
+                        id="admin-image"
+                        name="image"
+                        placeholder="product1.jpg">
+
+                </div>
+
+                <div class="full-width">
+
+                    <button
+                        type="submit"
+                        class="admin-button">
+
+                        Save Product
+
+                    </button>
+
+                </div>
+
+            </form>
+
+            <p
+                id="product-form-message"
+                class="admin-message"
+                aria-live="polite">
+            </p>
+
+        </section>
+
+        <section class="admin-panel">
+
+            <div class="panel-heading">
+
+                <div>
+                    <p class="admin-eyebrow">Ready Stock</p>
+                    <h3>Product Catalogue</h3>
+                </div>
+
+            </div>
+
+            <div class="admin-table-wrapper">
+
+                <table class="admin-table">
+
+                    <thead>
+
+                        <tr>
+                            <th>Product</th>
+                            <th>Category</th>
+                            <th>Price</th>
+                            <th>Stock</th>
+                            <th>Action</th>
+                        </tr>
+
+                    </thead>
+
+                    <tbody id="admin-product-list">
+
+                        <tr>
+                            <td>Tote Bag</td>
+                            <td>Bags</td>
+                            <td>R350</td>
+                            <td>Ready Stock</td>
+
+                            <td>
+                                <button
+                                    type="button"
+                                    class="table-action">
+                                    Edit
+                                </button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Cosmetic Bag</td>
+                            <td>Bags</td>
+                            <td>R290</td>
+                            <td>Ready Stock</td>
+
+                            <td>
+                                <button
+                                    type="button"
+                                    class="table-action">
+                                    Edit
+                                </button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Canvas Print</td>
+                            <td>Canvas Art</td>
+                            <td>R850</td>
+                            <td>Ready Stock</td>
+
+                            <td>
+                                <button
+                                    type="button"
+                                    class="table-action">
+                                    Edit
+                                </button>
+                            </td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="./js/admin.js"></script>
+
+</body>
+
+</html>
