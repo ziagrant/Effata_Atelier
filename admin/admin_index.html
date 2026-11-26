@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Dashboard | Effata Atelier</title>
+
+    <link rel="stylesheet" href="../client/css/variable.css">
+    <link rel="stylesheet" href="../client/css/base.css">
+    <link rel="stylesheet" href="./css/admin.css">
+</head>
+
+<body class="admin-body">
+
+    <aside class="admin-sidebar">
+
+        <div class="admin-brand">
+            <h1>Effata Atelier</h1>
+            <p>Administration</p>
+        </div>
+
+        <nav class="admin-navigation">
+
+            <a href="admin-index.html" class="active">
+                Dashboard
+            </a>
+
+            <a href="admin_products.html">
+                Products
+            </a>
+
+            <a href="orders.html">
+                Orders
+            </a>
+
+            <a href="../client/index.html">
+                View Store
+            </a>
+
+        </nav>
+
+    </aside>
+
+    <main class="admin-main">
+
+        <header class="admin-header">
+
+            <div>
+                <p class="admin-eyebrow">Effata Atelier</p>
+                <h2>Dashboard</h2>
+            </div>
+
+        </header>
+
+        <section class="dashboard-cards">
+
+            <article class="dashboard-card">
+
+                <span>Products</span>
+
+                <strong id="product-count">
+                    6
+                </strong>
+
+                <a href="admin_products.html">
+                    Manage Products
+                </a>
+
+            </article>
+
+            <article class="dashboard-card">
+
+                <span>Orders</span>
+
+                <strong id="order-count">
+                    3
+                </strong>
+
+                <a href="orders.html">
+                    View Orders
+                </a>
+
+            </article>
+
+            <article class="dashboard-card">
+
+                <span>Store Status</span>
+
+                <strong class="status-ready">
+                    Ready
+                </strong>
+
+                <a href="../client/index.html">
+                    Open Store
+                </a>
+
+            </article>
+
+        </section>
+
+        <section class="admin-panel">
+
+            <div class="panel-heading">
+
+                <div>
+                    <p class="admin-eyebrow">Overview</p>
+                    <h3>Recent Orders</h3>
+                </div>
+
+                <a href="orders.html" class="admin-button">
+                    View All
+                </a>
+
+            </div>
+
+            <div class="admin-table-wrapper">
+
+                <table class="admin-table">
+
+                    <thead>
+                        <tr>
+                            <th>Order</th>
+                            <th>Customer</th>
+                            <th>Total</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>#EA001</td>
+                            <td>Sample Customer</td>
+                            <td>R350</td>
+
+                            <td>
+                                <span class="status-badge">
+                                    New
+                                </span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>#EA002</td>
+                            <td>Sample Customer</td>
+                            <td>R850</td>
+
+                            <td>
+                                <span class="status-badge status-processing">
+                                    Processing
+                                </span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>#EA003</td>
+                            <td>Sample Customer</td>
+                            <td>R640</td>
+
+                            <td>
+                                <span class="status-badge status-completed">
+                                    Completed
+                                </span>
+                            </td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="./js/admin.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,387 @@
+/* =========================================
+   ADMIN LAYOUT
+========================================= */
+
+.admin-body {
+    min-height: 100vh;
+    background: #f7f4ee;
+    color: var(--dark-brown);
+}
+
+.admin-sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 250px;
+    min-height: 100vh;
+
+    padding: 2rem 1.5rem;
+
+    background: var(--dark-brown);
+    color: var(--white);
+}
+
+.admin-brand {
+    margin-bottom: 3rem;
+}
+
+.admin-brand h1 {
+    font-family: var(--heading-font);
+    color: var(--gold-light);
+    font-size: 2rem;
+}
+
+.admin-brand p {
+    font-size: 0.85rem;
+    opacity: 0.8;
+}
+
+.admin-navigation {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.admin-navigation a {
+    padding: 0.9rem 1rem;
+
+    border-radius: 5px;
+
+    transition: var(--transition);
+}
+
+.admin-navigation a:hover,
+.admin-navigation a.active {
+    background: var(--gold-primary);
+    color: var(--white);
+}
+
+.admin-main {
+    margin-left: 250px;
+    padding: 3rem;
+}
+
+/* =========================================
+   HEADER
+========================================= */
+
+.admin-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 2rem;
+
+    margin-bottom: 2.5rem;
+}
+
+.admin-header h2 {
+    font-family: var(--heading-font);
+    font-size: 3rem;
+
+    color: var(--dark-brown);
+}
+
+.admin-eyebrow {
+    color: var(--gold-primary);
+
+    font-size: 0.8rem;
+    font-weight: 600;
+
+    text-transform: uppercase;
+    letter-spacing: 0.15rem;
+}
+
+/* =========================================
+   DASHBOARD CARDS
+========================================= */
+
+.dashboard-cards {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 1.5rem;
+
+    margin-bottom: 2.5rem;
+}
+
+.dashboard-card {
+    display: flex;
+    flex-direction: column;
+
+    gap: 0.8rem;
+
+    padding: 2rem;
+
+    background: var(--white);
+
+    border-top: 4px solid var(--gold-primary);
+    border-radius: var(--radius);
+
+    box-shadow: var(--shadow);
+}
+
+.dashboard-card span {
+    color: #756c5e;
+}
+
+.dashboard-card strong {
+    font-family: var(--heading-font);
+
+    font-size: 2.5rem;
+
+    color: var(--dark-brown);
+}
+
+.dashboard-card a {
+    color: var(--gold-primary);
+
+    font-weight: 600;
+}
+
+.status-ready {
+    color: #547454 !important;
+}
+
+/* =========================================
+   PANELS
+========================================= */
+
+.admin-panel {
+    margin-bottom: 2rem;
+
+    padding: 2rem;
+
+    background: var(--white);
+
+    border-radius: var(--radius);
+
+    box-shadow: var(--shadow);
+}
+
+.panel-heading {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 1rem;
+
+    margin-bottom: 2rem;
+}
+
+.panel-heading h3 {
+    font-family: var(--heading-font);
+
+    font-size: 2rem;
+}
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+.admin-button {
+    display: inline-block;
+
+    padding: 0.8rem 1.4rem;
+
+    border: none;
+    border-radius: 5px;
+
+    background: var(--gold-primary);
+    color: var(--white);
+
+    font: inherit;
+
+    cursor: pointer;
+
+    transition: var(--transition);
+}
+
+.admin-button:hover {
+    background: var(--dark-brown);
+}
+
+.table-action {
+    padding: 0.45rem 0.8rem;
+
+    border: 1px solid var(--gold-primary);
+    border-radius: 4px;
+
+    background: transparent;
+    color: var(--gold-primary);
+
+    cursor: pointer;
+}
+
+/* =========================================
+   TABLES
+========================================= */
+
+.admin-table-wrapper {
+    overflow-x: auto;
+}
+
+.admin-table {
+    width: 100%;
+
+    border-collapse: collapse;
+}
+
+.admin-table th,
+.admin-table td {
+    padding: 1rem;
+
+    border-bottom: 1px solid #e5e0d7;
+
+    text-align: left;
+}
+
+.admin-table th {
+    color: var(--dark-brown);
+
+    font-size: 0.85rem;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.05rem;
+}
+
+.status-badge {
+    display: inline-block;
+
+    padding: 0.35rem 0.75rem;
+
+    border-radius: 20px;
+
+    background: #f3e4bd;
+
+    color: #735818;
+
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.status-processing {
+    background: #e7e0cf;
+
+    color: #665a43;
+}
+
+.status-completed {
+    background: #dce9dc;
+
+    color: #386138;
+}
+
+/* =========================================
+   PRODUCT FORM
+========================================= */
+
+.admin-form {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 0.5rem;
+}
+
+.form-group label {
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea,
+.admin-filter {
+    width: 100%;
+
+    padding: 0.85rem 1rem;
+
+    border: 1px solid #d8d2c7;
+    border-radius: 5px;
+
+    background: var(--white);
+
+    color: var(--dark-brown);
+
+    font: inherit;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.full-width {
+    grid-column: 1 / -1;
+}
+
+.admin-message {
+    margin-top: 1rem;
+
+    color: var(--gold-primary);
+
+    font-weight: 600;
+}
+
+/* =========================================
+   RESPONSIVE ADMIN
+========================================= */
+
+@media (max-width: 900px) {
+
+    .admin-sidebar {
+        position: static;
+
+        width: 100%;
+        min-height: auto;
+    }
+
+    .admin-navigation {
+        flex-direction: row;
+
+        flex-wrap: wrap;
+    }
+
+    .admin-main {
+        margin-left: 0;
+
+        padding: 2rem;
+    }
+
+    .dashboard-cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .admin-main {
+        padding: 1rem;
+    }
+
+    .admin-header,
+    .panel-heading {
+        align-items: flex-start;
+
+        flex-direction: column;
+    }
+
+    .admin-form {
+        grid-template-columns: 1fr;
+    }
+
+    .full-width {
+        grid-column: auto;
+    }
+}

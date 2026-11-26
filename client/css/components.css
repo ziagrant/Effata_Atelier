@@ -1,0 +1,225 @@
+/* =========================================
+   BUTTONS
+========================================= */
+
+.btn-primary,
+.btn-secondary {
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-height: 46px;
+
+    padding: 0.75rem 1.6rem;
+
+    font-weight: 600;
+
+    transition: var(--transition);
+}
+
+
+.btn-primary {
+    border:
+        1px solid
+        var(--gold-primary);
+
+    background-color:
+        var(--gold-primary);
+
+    color: var(--white);
+}
+
+
+.btn-primary:hover {
+    background-color:
+        var(--dark-brown);
+
+    border-color:
+        var(--dark-brown);
+}
+
+
+.btn-secondary {
+    border:
+        1px solid
+        var(--gold-primary);
+
+    background-color:
+        transparent;
+
+    color:
+        var(--gold-primary);
+}
+
+
+.btn-secondary:hover {
+    background-color:
+        var(--gold-primary);
+
+    color:
+        var(--white);
+}
+
+
+/* =========================================
+   PRODUCT CARDS
+========================================= */
+
+.product-card {
+    overflow: hidden;
+
+    background-color:
+        var(--white);
+
+    border:
+        1px solid
+        rgba(194, 137, 27, 0.35);
+
+    box-shadow:
+        var(--shadow);
+
+    transition:
+        var(--transition);
+}
+
+
+.product-card:hover {
+    transform:
+        translateY(-4px);
+
+    box-shadow:
+        var(--shadow-hover);
+}
+
+
+.product-details {
+    padding: 1.5rem;
+
+    text-align: center;
+}
+
+
+.product-category {
+    color:
+        var(--gold-primary);
+
+    font-size:
+        0.72rem;
+
+    font-weight:
+        600;
+
+    letter-spacing:
+        0.13em;
+
+    text-transform:
+        uppercase;
+}
+
+
+.product-title {
+    margin:
+        0.5rem 0;
+
+    color:
+        var(--dark-brown);
+
+    font-family:
+        var(--heading-font);
+
+    font-size:
+        1.9rem;
+}
+
+
+.product-price {
+    margin:
+        0.8rem 0
+        1.3rem;
+
+    color:
+        var(--gold-primary);
+
+    font-weight:
+        600;
+}
+
+
+/* =========================================
+   EMPTY STATE
+========================================= */
+
+.empty-state {
+    padding:
+        3rem;
+
+    background-color:
+        var(--white);
+
+    border:
+        1px solid
+        var(--gold-light);
+
+    text-align:
+        center;
+}
+
+
+/* =========================================
+   MESSAGES
+========================================= */
+
+.form-message {
+    min-height:
+        1.4rem;
+
+    margin-top:
+        1rem;
+}
+
+
+.success-message {
+    color:
+        #456944;
+}
+
+
+.error-message {
+    color:
+        #a13737;
+}
+
+
+/* =========================================
+   TABLE BUTTONS
+========================================= */
+
+.table-action {
+    padding:
+        0.55rem
+        0.8rem;
+
+    border:
+        1px solid
+        var(--gold-primary);
+
+    background:
+        transparent;
+
+    color:
+        var(--gold-primary);
+
+    font-weight:
+        600;
+}
+
+
+.table-action:hover {
+    background-color:
+        var(--gold-primary);
+
+    color:
+        var(--white);
+}

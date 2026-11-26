@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Orders | Effata Atelier Admin</title>
+
+    <link rel="stylesheet" href="../client/css/variable.css">
+    <link rel="stylesheet" href="../client/css/base.css">
+    <link rel="stylesheet" href="./css/admin.css">
+</head>
+
+<body class="admin-body">
+
+    <aside class="admin-sidebar">
+
+        <div class="admin-brand">
+            <h1>Effata Atelier</h1>
+            <p>Administration</p>
+        </div>
+
+        <nav class="admin-navigation">
+
+            <a href="admin-index.html">
+                Dashboard
+            </a>
+
+            <a href="admin_products.html">
+                Products
+            </a>
+
+            <a href="orders.html" class="active">
+                Orders
+            </a>
+
+            <a href="../client/index.html">
+                View Store
+            </a>
+
+        </nav>
+
+    </aside>
+
+    <main class="admin-main">
+
+        <header class="admin-header">
+
+            <div>
+                <p class="admin-eyebrow">
+                    Order Management
+                </p>
+
+                <h2>Orders</h2>
+            </div>
+
+        </header>
+
+        <section class="admin-panel">
+
+            <div class="panel-heading">
+
+                <div>
+                    <p class="admin-eyebrow">
+                        Customer Orders
+                    </p>
+
+                    <h3>
+                        Order List
+                    </h3>
+                </div>
+
+                <select
+                    id="order-filter"
+                    class="admin-filter">
+
+                    <option value="all">
+                        All Orders
+                    </option>
+
+                    <option value="new">
+                        New
+                    </option>
+
+                    <option value="processing">
+                        Processing
+                    </option>
+
+                    <option value="completed">
+                        Completed
+                    </option>
+
+                </select>
+
+            </div>
+
+            <div class="admin-table-wrapper">
+
+                <table class="admin-table">
+
+                    <thead>
+
+                        <tr>
+                            <th>Order</th>
+                            <th>Customer</th>
+                            <th>Total</th>
+                            <th>Delivery</th>
+                            <th>Status</th>
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr data-status="new">
+                            <td>#EA001</td>
+                            <td>Sample Customer</td>
+                            <td>R350</td>
+                            <td>Courier</td>
+
+                            <td>
+                                <span class="status-badge">
+                                    New
+                                </span>
+                            </td>
+                        </tr>
+
+                        <tr data-status="processing">
+                            <td>#EA002</td>
+                            <td>Sample Customer</td>
+                            <td>R850</td>
+                            <td>Courier</td>
+
+                            <td>
+                                <span class="status-badge status-processing">
+                                    Processing
+                                </span>
+                            </td>
+                        </tr>
+
+                        <tr data-status="completed">
+                            <td>#EA003</td>
+                            <td>Sample Customer</td>
+                            <td>R640</td>
+                            <td>Courier</td>
+
+                            <td>
+                                <span class="status-badge status-completed">
+                                    Completed
+                                </span>
+                            </td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="./js/admin.js"></script>
+
+</body>
+
+</html>
